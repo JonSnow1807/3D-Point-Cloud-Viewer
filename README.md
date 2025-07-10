@@ -25,6 +25,22 @@ A high-performance 3D point cloud visualization engine built with C++17 and Open
 - **Memory**: 40% reduction through custom memory pooling
 - **Benchmark**: 3x performance improvement over PCL viewer baseline
 
+## Performance Testing
+
+This project includes comprehensive performance benchmarks:
+
+```bash
+# Generate test data (10K to 2M points)
+python3 benchmarks/scripts/generate_test_data.py
+
+# Run interactive performance tests
+./benchmarks/scripts/run_performance_test.sh
+
+# Measure octree construction time
+cd build && make octree_timing
+./benchmarks/octree_timing
+```
+
 ## Architecture
 
 ```
