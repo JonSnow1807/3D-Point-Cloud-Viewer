@@ -4,7 +4,7 @@
 [![OpenGL](https://img.shields.io/badge/OpenGL-3.3-green.svg)](https://www.opengl.org/)
 [![CMake](https://img.shields.io/badge/CMake-3.14+-red.svg)](https://cmake.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Performance](https://img.shields.io/badge/Performance-858%20FPS-brightgreen.svg)](PERFORMANCE_RESULTS.md)
+[![Performance](https://img.shields.io/badge/Performance-858%20FPS-brightgreen.svg)](benchmarks/PERFORMANCE_RESULTS.md)
 
 
 A high-performance 3D point cloud visualization engine built with C++17 and OpenGL, capable of rendering 1M+ points at 60 FPS.
@@ -16,14 +16,13 @@ A high-performance 3D point cloud visualization engine built with C++17 and Open
 - **Real-time Processing**: Point cloud filtering with <100ms execution time
 - **Memory Efficient**: Custom memory pooling reduces memory footprint by 40%
 - **Modular Architecture**: Clean, extensible design with CMake build system
-- **Comprehensive Testing**: Unit tests and benchmarking suite included
 
 ## Performance Metrics
 
-- **Rendering**: 1M+ points at 60 FPS
+- **Rendering**: 1M+ points at 858 FPS (14x target)
 - **Filtering**: <100ms for 500K point datasets
 - **Memory**: 40% reduction through custom memory pooling
-- **Benchmark**: 3x performance improvement over PCL viewer baseline
+- **Benchmark**: 3-4x performance improvement over PCL viewer baseline
 
 
 ## Architecture
