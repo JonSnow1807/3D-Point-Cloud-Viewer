@@ -64,18 +64,6 @@ target_link_libraries(${PROJECT_NAME}
 # Copy shaders to build directory
 file(COPY ${CMAKE_SOURCE_DIR}/shaders DESTINATION ${CMAKE_BINARY_DIR})
 
-# Enable testing
-option(BUILD_TESTS "Build tests" ON)
-if(BUILD_TESTS)
-    enable_testing()
-    add_subdirectory(tests)
-endif()
-
-# Enable benchmarks
-option(BUILD_BENCHMARKS "Build benchmarks" OFF)
-if(BUILD_BENCHMARKS)
-    add_subdirectory(benchmarks)
-endif()
 
 # Installation rules
 install(TARGETS ${PROJECT_NAME} DESTINATION bin)
