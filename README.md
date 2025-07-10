@@ -100,19 +100,6 @@ Supports XYZ RGB format:
 4. GPU buffer updates
 5. Point rendering with custom shaders
 
-## Benchmarks
-
-Run benchmarks with:
-```bash
-./benchmarks/benchmark_rendering
-```
-
-Example results:
-- Point cloud loading: 250ms for 1M points
-- Octree construction: 150ms for 1M points
-- Frame time: 16.6ms (60 FPS) with frustum culling
-- Memory usage: 38MB for 1M points (vs 64MB baseline)
-
 ## Performance Testing
 
 This project includes comprehensive performance benchmarks:
