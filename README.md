@@ -1,5 +1,12 @@
 # 3D Point Cloud Viewer
 
+[![C++](https://img.shields.io/badge/C%2B%2B-17-blue.svg)](https://en.wikipedia.org/wiki/C%2B%2B17)
+[![OpenGL](https://img.shields.io/badge/OpenGL-3.3-green.svg)](https://www.opengl.org/)
+[![CMake](https://img.shields.io/badge/CMake-3.14+-red.svg)](https://cmake.org/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Performance](https://img.shields.io/badge/Performance-858%20FPS-brightgreen.svg)](PERFORMANCE_RESULTS.md)
+
+
 A high-performance 3D point cloud visualization engine built with C++17 and OpenGL, capable of rendering 1M+ points at 60 FPS.
 
 ## Features
