@@ -67,7 +67,10 @@ git clone https://github.com/JonSnow1807/3D-Point-Cloud-Viewer.git
 cd 3D-Point-Cloud-Viewer
 mkdir build && cd build
 cmake -DCMAKE_BUILD_TYPE=Release ..
-make -j$(sysctl -n hw.ncpu)
+
+# Build with all available cores
+make -j$(nproc)           # Linux
+make -j$(sysctl -n hw.ncpu)  # macOS
 ```
 
 ### Run
