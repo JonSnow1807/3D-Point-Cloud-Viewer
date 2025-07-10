@@ -134,8 +134,9 @@ python3 benchmarks/scripts/generate_test_data.py
 ./benchmarks/scripts/run_performance_test.sh
 
 # Measure octree construction time
-cd build && make octree_timing
-./benchmarks/octree_timing
+cd build
+g++ -O3 -std=c++17 ../benchmarks/src/test_octree_timing.cpp -o octree_timing
+./octree_timing
 ```
 ## Future Enhancements
 
