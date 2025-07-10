@@ -17,14 +17,17 @@ add_executable(test_filters test_filters.cpp
     ${PROJECT_SOURCE_DIR}/src/core/PointCloud.cpp
     ${PROJECT_SOURCE_DIR}/src/processing/OutlierRemoval.cpp
     ${PROJECT_SOURCE_DIR}/src/processing/VoxelDownsampling.cpp
+    ${PROJECT_SOURCE_DIR}/src/processing/Filters.cpp
 )
 
-add_executable(test_memory_pool test_memory_pool.cpp)
+add_executable(test_memory_pool test_memory_pool.cpp
+    ${PROJECT_SOURCE_DIR}/src/core/MemoryPool.cpp
+)
 
 # Link libraries
-target_link_libraries(test_octree ${GTEST_LIBRARIES} pthread)
-target_link_libraries(test_filters ${GTEST_LIBRARIES} pthread)
-target_link_libraries(test_memory_pool ${GTEST_LIBRARIES} pthread)
+target_link_libraries(test_octree GTest::GTest GTest::Main pthread)
+target_link_libraries(test_filters GTest::GTest GTest::Main pthread)
+target_link_libraries(test_memory_pool GTest::GTest GTest::Main pthread)
 
 # Add tests
 add_test(NAME OctreeTest COMMAND test_octree)
