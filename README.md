@@ -7,8 +7,7 @@
 [![Performance](https://img.shields.io/badge/Performance-858%20FPS-brightgreen.svg)](benchmarks/PERFORMANCE_RESULTS.md)
 
 
-A high-performance 3D point cloud visualization engine built with C++17 and OpenGL, capable of rendering 1M+ points at 60 FPS.
-
+A high-performance 3D point cloud visualization engine built with C++17 and OpenGL, achieving **858 FPS with 1M+ points** through advanced spatial optimization.
 ## Features
 
 - **High Performance Rendering**: Renders millions of points at 60+ FPS using OpenGL
@@ -64,11 +63,11 @@ A high-performance 3D point cloud visualization engine built with C++17 and Open
 
 ### Build
 ```bash
-git clone <repository>
-cd point-cloud-viewer
+git clone https://github.com/JonSnow1807/3D-Point-Cloud-Viewer.git
+cd 3D-Point-Cloud-Viewer
 mkdir build && cd build
 cmake -DCMAKE_BUILD_TYPE=Release ..
-make -j$(nproc)
+make -j$(sysctl -n hw.ncpu)
 ```
 
 ### Run
